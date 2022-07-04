@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+   
+    
+  </head>
+<body>
+    <div class="head"><h1>Average Calculator</h1></div>
+    <div class="box">
+    <form onsubmit="Average(); return false;">
+        <h1>English</h1>
+        <label for="Totalmarks1">Total marks:</label> 
+   <input type="number" id="Totalmarks1" required></br></br>
+    <label for="Obtmarks1">Obt marks: <label>
+<input type="number" id="Obtmarks1" required></br></br>
+
+<h1>Math</h1>
+<label for="Totalmarks2">Total marks:</label> 
+   <input type="number" id="Totalmarks2" required></br></br>
+    <label for="Obtmarks2">Obt marks: <label>
+<input type="number" id="Obtmarks2" required></br></br>
+
+<h1>Urdu</h1>
+
+<label for="Totalmarks3">Total marks:</label> 
+   <input type="number" id="Totalmarks3" required></br></br>
+    <label for="Obtmarks3">Obt marks: <label>
+<input type="number" id="Obtmarks3" required></br></br>
+
+<h1>Physics</h1>
+<label for="Totalmarks4">Total marks:</label> 
+   <input type="number" id="Totalmarks4" required></br></br>
+    <label for="Obtmarks4">Obt marks: <label>
+<input type="number" id="Obtmarks4" required></br></br>
+
+<h1>Chemistry</h1>
+<label for="Totalmarks5">Total marks:</label> 
+   <input type="number" id="Totalmarks5" required></br></br>
+    <label for="Obtmarks5">Obt marks: <label>
+<input type="number" id="Obtmarks5" required></br></br>
+
+  <button type="submit">Calculate</button>
+  </form>
+  <h1 id="result"></h1>
+    </div>
+    <script>
+        function Average(){
+            let Totalmarks1 = document.querySelector("#Totalmarks1").value;
+            let Obtmarks1 = document.querySelector("#Obtmarks1").value;
+            let Totalmarks2 = document.querySelector("#Totalmarks2").value;
+            let Obtmarks2 = document.querySelector("#Obtmarks2").value;
+            let Totalmarks3 = document.querySelector("#Totalmarks3").value;
+            let Obtmarks3 = document.querySelector("#Obtmarks3").value;
+            let Totalmarks4 = document.querySelector("#Totalmarks4").value;
+            let Obtmarks4= document.querySelector("#Obtmarks4").value;
+            let Totalmarks5 = document.querySelector("#Totalmarks5").value;
+            let Obtmarks5 = document.querySelector("#Obtmarks5").value;
+            let result = (Obtmarks1 + Obtmarks2 + Obtmarks3 + Obtmarks4 + Obtmarks5) / 5;
+            document.querySelector("#result").innerHTML = `Average is ${result}`;
+                }
+    </script>
+</body>
+</html>

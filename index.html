@@ -50,18 +50,18 @@
     </div>
     <script>
         function Average(){
-            let Totalmarks1 = document.querySelector("#Totalmarks1").value;
-            let Obtmarks1 = document.querySelector("#Obtmarks1").value;
-            let Totalmarks2 = document.querySelector("#Totalmarks2").value;
-            let Obtmarks2 = document.querySelector("#Obtmarks2").value;
-            let Totalmarks3 = document.querySelector("#Totalmarks3").value;
-            let Obtmarks3 = document.querySelector("#Obtmarks3").value;
-            let Totalmarks4 = document.querySelector("#Totalmarks4").value;
-            let Obtmarks4= document.querySelector("#Obtmarks4").value;
-            let Totalmarks5 = document.querySelector("#Totalmarks5").value;
-            let Obtmarks5 = document.querySelector("#Obtmarks5").value;
+            let Totalmarks1 = +document.querySelector("#Totalmarks1").value;
+            let Obtmarks1 = +document.querySelector("#Obtmarks1").value;
+            let Totalmarks2 = +document.querySelector("#Totalmarks2").value;
+            let Obtmarks2 = +document.querySelector("#Obtmarks2").value;
+            let Totalmarks3 = +document.querySelector("#Totalmarks3").value;
+            let Obtmarks3 = +document.querySelector("#Obtmarks3").value;
+            let Totalmarks4 = +document.querySelector("#Totalmarks4").value;
+            let Obtmarks4= +document.querySelector("#Obtmarks4").value;
+            let Totalmarks5 = +document.querySelector("#Totalmarks5").value;
+            let Obtmarks5 = +document.querySelector("#Obtmarks5").value;
             let result = (Obtmarks1 + Obtmarks2 + Obtmarks3 + Obtmarks4 + Obtmarks5) / 5;
-            document.querySelector("#result").innerHTML = `Average is ${result}`;
+            document.querySelector("#result").innerHTML = `Your Average is ${result}`;
                 }
     </script>
 </body>
